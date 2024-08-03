@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="hang.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>   
+     <button type="button" onclick="selector()" id="selector" class="playAgain selector">
+    Start Game
+  </button>
+    <div id="starter" class="starter">
+      <h2 style="width: auto;text-align: center;">Select Category</h2>
+      <button onclick="startGame('animals')"class="playAgain">Animals Game</button>
+      <button onclick="startGame('birds')"class="playAgain">Birds Game</button>
+      <button onclick="startGame('indian')"class="playAgain">Indian Game</button>
+      <button onclick="startGame('fruits')"class="playAgain">Fruits Game</button>
+      <button onclick="startGame('vegetables')"class="playAgain">Vegetables Game</button></div>
+
+    <div class="container" id="container">
+      <h1 style="margin-bottom: 10px">Hangman Game!</h1>
+      <div class="flex">
+        <div>
+          <canvas id="hangMan" class="hang"></canvas>
+        </div>
+        <div class="game">
+          <div class="word" id="blank"></div>
+          <div class="keyboard" id="keyboard"></div>
+        </div>
+      </div>
+      <p id="message"></p>
+      <div class="btnhold">
+        <button id="playAgain" class="playAgain btn1">Play Again !</button>
+        <button type="button" class="btn1 playAgain" onclick="opnHint()">
+          Get Hint
+          <i class="fa-regular fa-lightbulb"></i>
+        </button>
+      </div>
+    </div>
+    <div class="pop-up" id="popup">
+      <div class="popup-content">
+        <h2>Hint</h2>
+        <span onclick="clsHint()" class="close">&times;</span>
+        <p id="output"></p>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="hang.js"></script>
+  </body>
+</html>
