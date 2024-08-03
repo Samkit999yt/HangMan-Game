@@ -1,8 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Arvo", serif;
 }
-
 html {
     height: auto;
     width: 100%;
@@ -22,7 +22,7 @@ body {
     height: auto;
     width: auto;
     padding: 26px;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 1.7rem;
     display: none;
     outline: none;
@@ -57,12 +57,12 @@ body {
 
 .letter {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 2.5rem;
-    padding: 2px;
+    padding: 8px;
     background-color: #000;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
     border: 1px solid white;
     margin: 2px;
     text-align: center;
@@ -89,7 +89,7 @@ body {
 .guess {
     display: inline-block;
     margin: 7px;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.9rem;
 }
 
@@ -136,7 +136,7 @@ body {
     position: relative;
     padding: 0 40px;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     border: 0;
     box-shadow: hsl(210, 89%, 28%) 0px 7px 0px 0px;
@@ -155,9 +155,9 @@ body {
     inset: 0;
     padding: 20px 40px;
     font-size: 15px;
-    font-weight: bold;
+    font-weight:450;
     color: white;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     opacity: 1;
 }
 
@@ -173,6 +173,18 @@ body {
     opacity: 0;
 }
 
+.love{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.love:active{
+    text-decoration: none;
+    color: #000;
+}
+
 /* Background for mobile devices */
 @media only screen and (max-width: 767px) {
     .container {
@@ -186,9 +198,9 @@ body {
     }
 
     .letter {
-        font-size: 1.7rem;
-        width: 1.9rem;
-        padding: .5px;
+        font-size: 1.5rem;
+        width: 2rem;
+        padding: 1px;
         margin: 1px;
     }
 
@@ -232,7 +244,7 @@ body {
 }
 
 #message {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.7rem;
     text-align: center;
 }
@@ -273,6 +285,6 @@ h2 {
 #output {
     font-size: 1.7rem;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     margin: 1rem;
 }
